@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // CHAPTER 7
+        //TASK 6
+        document.write("<h1>TASK 6")
+        document.write("<h1>Mark Sheet</h1>")
+        var totaMarks = +prompt("Enter your total marks");
+        var obtainMarks = +prompt("Enter your obtain marks")
+        var percentage = (obtainMarks / totaMarks) * 100;
+        document.write("<h2>Total marks : ", totaMarks, "<br>")
+        document.write("Obtained marks : ", obtainMarks, "<br>")
+        document.write("Percentage : ", percentage, "%", "<br>")
+        if (percentage > 80) {
+            document.write("<h2>Grade: A+<br>")
+            document.write("Remarks :  Excellent performance.")
+        }
+        else if (percentage > 75 && percentage <= 80) {
+            document.write("<h2>Grade: A<br>")
+            document.write("Remarks :  Good.")
+        }
+        else if (percentage > 70 && percentage <= 75) {
+            document.write("<h2>Grade: B+<br>")
+            document.write("Remarks :  Better.")
+        }
+        else if (percentage > 65 && percentage <= 70) {
+            document.write("<h2>Grade: B<br>")
+            document.write("Remarks :  You need to improve.")
+        }
+        else if (percentage > 60 && percentage <= 65) {
+            document.write("<h2>Grade: C<br>")
+            document.write("Remarks :  Need a lot of improvement.")
+        }
+        else {
+            document.write("<h2>Fail<br>")
+            document.write("Remarks : Sorry")
+        }
+    </script>
+</body>
+
+</html>

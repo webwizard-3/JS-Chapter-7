@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // CHAPTER 7
+        //TASK 4
+        document.write("<h1>TASK 4</h1>")
+        var fuelTank = prompt("Enter the capacity of your car's fuel tank in liters:");
+        if (fuelTank <= 0) {
+            alert("Invalid input! Please enter a number greater than zero.");
+        }
+        else if (fuelTank <= 0.99) {
+            document.write("<h2>Please refill the fuel in your car")
+        }
+        else {
+            document.write('<h2>Your car\'s fuel tank has ' + fuelTank + ' liters.<br/> If you want to refill go to the station');
+        }
+    </script>
+</body>
+
+</html>
